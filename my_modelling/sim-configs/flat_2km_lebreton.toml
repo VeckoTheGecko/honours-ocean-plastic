@@ -1,0 +1,38 @@
+ID = "938c073e97dc36adf89e7bd8b53145203f706afca0325a36a0b3e889aafb50bf"
+ID_human = "venus-king-nuts"
+toml_fname = "flat_2km_lebreton.toml"
+
+[coastline]
+coast_file = "templating/coastlines/base_2km.png"
+start_xy = [ 0, 0,]
+dx = 2000
+dy = 2000
+ID = "c12ca828e8e0c977851b6f30ed14b1e676a29e48a609e180abb6dc6667c4fa12"
+ID_human = "colorado-diet-mississippi"
+
+[hydro_model]
+duration_days = 4
+ID = "1e70bb8eabd24e61fac1d67655d916a3a4039726c7554758fb4837f426e93172"
+ID_human = "timing-snake-twenty"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "938c073e97dc36adf89e7bd8b53145203f706afca0325a36a0b3e889aafb50bf"
+ID_human = "venus-king-nuts"
+
+[codes]
+coast_code = "X"
+resolution_code = "2"
+beach_code = "B"
+total = "X2B"
+
+[particle_model.beaching]
+beaching_key = "Lebreton2018"
+
+[particle_model.beaching.fieldset_options]
+beaching_time_cutoff_days = 2

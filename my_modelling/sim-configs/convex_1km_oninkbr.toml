@@ -1,0 +1,39 @@
+ID = "e639c506e8edab04342edd6603b5f61617b8bda1577b4b949ce51e0a146f5181"
+ID_human = "kilo-pip-bluebird"
+toml_fname = "convex_1km_oninkbr.toml"
+
+[coastline]
+coast_file = "templating/coastlines/convex_1km.png"
+start_xy = [ 0, 0,]
+dx = 1000
+dy = 1000
+ID = "a3b237a664c7a9000342db19fb6442c20f7852ee6a63d9628aef5469146e267e"
+ID_human = "bacon-shade-september"
+
+[hydro_model]
+duration_days = 4
+ID = "628d5ec6f8d194208185e9bb4972c8b75f152c34ab903f1fd40b540359831603"
+ID_human = "april-music-island"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "e639c506e8edab04342edd6603b5f61617b8bda1577b4b949ce51e0a146f5181"
+ID_human = "kilo-pip-bluebird"
+
+[codes]
+coast_code = "Z"
+resolution_code = "1"
+beach_code = "E"
+total = "Z1E"
+
+[particle_model.beaching]
+beaching_key = "Onink2021-beach-resus"
+
+[particle_model.beaching.fieldset_options]
+beaching_timescale_days = 5
+resuspension_timescale_days = 10

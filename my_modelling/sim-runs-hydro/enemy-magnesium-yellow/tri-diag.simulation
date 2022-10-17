@@ -1,0 +1,111 @@
+
+********************************************************************************
+***
+*** Deltares, FLOW2D3D Version 6.03.00.62434, Oct 24 2018, 14:57:52
+***           built from : https://svn.oss.deltares.nl/repos/delft3d/branches/releases/59659
+***
+***           runid      : simulation
+***           date,time  : 2022-09-14, 19:43:42
+***
+********************************************************************************
+
+*** MESSAGE Executable for 64-bits platform. 
+*** MESSAGE Double precision computation using reals of kind    8 
+*** Start of User Defined Model description 
+ -
+ -  Running the simulation with   
+ -  weakly reflective Riemann boun
+ -  conditions with 5m/s wind spee
+ -
+*** End   of User Defined Model description 
+
+*** MESSAGE Using UNESCO density formulation by default 
+*** MESSAGE Number of pivot points to convert wind speed to wind drag coef.: 3 
+*** MESSAGE Momentum solver cyclic method is specified 
+*** MESSAGE DRYFLP and DPSOPT both specified in MD-file. Using DPSOPT: MAX 
+*** MESSAGE map-file format is NetCDF
+*** MESSAGE His, map, drogue, and fourier files written in single precision (except for time and horizontal coordinates).
+*** MESSAGE Uniform wind and pressure specified 
+*** WARNING Latitude of your model is 0 degrees, model located at equator
+*** WARNING no stations and cross-sections defined; HIS-file not created !!
+*** WARNING File will not be created - Inconsistent comm. file times 
+ Creating new trim-simulation.nc
+*** Restart file written at       1440.0000 minutes after ITDATE
+*** Restart file written at       2880.0000 minutes after ITDATE
+*** Restart file written at       4320.0000 minutes after ITDATE
+*** Restart file written at       5760.0000 minutes after ITDATE
+ 
+*** Simulation finished *******************************************************
+ 
+Performance timers:
+|---------------------------------------------------------------------|
+|Timer name           |       wall clock      |       CPU time        |
+|                     |-----------------------|-----------------------|
+|                     |       sec     |  %    |       sec     |  %    |
+|---------------------------------------------------------------------|
+|Initialization       |         0.60  |  0.2  |         0.58  |  0.1  | 
+|Simulation           |       396.67  | 99.8  |       392.55  | 99.8  | 
+|Close and stop       |         0.03  |  0.0  |         0.03  |  0.0  | 
+|                     |------------- +|----- +|------------- +|----- +|
+|Total                |       397.29  |100.0  |       393.16  |100.0  | 
+|---------------------------------------------|-----------------------|
+|Momentum eq.         |        94.14  | 23.7  |        92.67  | 23.6  | 
+|Continuity eq.       |        87.51  | 22.0  |        86.41  | 22.0  | 
+|Transport eq.        |         0.00  |  0.0  |         0.00  |  0.0  | 
+|Turbulence           |        80.00  | 20.1  |        78.27  | 19.9  | 
+|3D Morphology        |         0.02  |  0.0  |         0.00  |  0.0  | 
+|---------------------------------------------|-----------------------|
+|Wait (dd   module)   |         0.00  |  0.0  |         0.00  |  0.0  | 
+|Wait (ext. modules)  |         0.00  |  0.0  |         0.00  |  0.0  | 
+|---------------------------------------------------------------------|
+| Performance = CPU time / (TimeSteps*MMAX*NMAX*KMAX*LMAX)            |
+|   TimeSteps   :        5760                                         |
+|   MMAX        :         122                                         |
+|   NMAX        :         122                                         |
+|   KMAX        :           2                                         |
+|   LMAX        :           2                                         |
+|   Performance : 0.11465E-05 [sec]                                   |
+|---------------------------------------------------------------------|
+|Explanation:                                                         |
+|                                                                     |
+|Initialization : Everything up to the first time step                |
+|Simulation     : All time steps                                      |
+|Close and stop : Everything after the last time step                 |
+|Total          : FLOW for this subdomain,                            |
+|                 excluding allocation/deallocation of global data    |
+|                                                                     |
+|Momentum eq.   : Part of Simulation ("UZD")                          |
+|Continuity eq. : Part of Simulation ("SUD")                          |
+|Transport eq.  : Part of Simulation ("DIFU")                         |
+|                 Only relevant when constituents are modelled.       |
+|Turbulence     : Part of Simulation ("TURCLO, TRATUR, TUR2D")        |
+|3D Morphology  : Part of Simulation ("EROSED, BOTT3D")               |
+|                 Only relevant when sediments are modelled.          |
+|Wait (dd)      : Part of Initialization, Simulation and Closing.     |
+|                 ("NXTSTP, NXTDRY")                                  |
+|                 Only relevant when DomainDecomposition is used.     |
+|                 Communication with and execution of the "mappers".  |
+|                 Mappers are separate threads, possibly in another   |
+|                 executable, possibly on another node. They copy     |
+|                 data from one subdomain to another.                 |
+|                 FLOWs must wait while the mappers are executing,    |
+|                 mappers must wait while the FLOWs are executing.    |
+|Wait (ext)     : Part of Initialization, Simulation and Closing.     |
+|                 ("SYNC, _TO_, _FROM_")                              |
+|                 Communication with and execution of all "external"  |
+|                 modules:                                            |
+|                 Online WAVES, Online WAQ, Online RTC, Fluid Mud.    |
+|                                                                     |
+|---------------------------------------------------------------------|
+ 
+
+********************************************************************************
+***
+*** FINISHED    Delft3D-FLOW
+***             runid      : simulation
+***             date, time : 2022-09-14, 19:50:19
+***
+********************************************************************************
+
+*** MESSAGE Removing file: TMP_simulation.grd 
+*** MESSAGE Removing file: TMP_simulation.bct 

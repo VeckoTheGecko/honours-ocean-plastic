@@ -1,0 +1,24 @@
+my_modelling/sim-runs-particles
+my_modelling/visualisations_*
+my_modelling/visualisations/*
+my_modelling/templating/hydro_example
+
+# OceanParcels intermediate files
+**/out-**
+
+# PYTHON
+__pycache__/
+venv
+.venv
+.pytest_cache
+
+# VSCODE
+.vscode
+
+# JUPYTER   
+*.bundle.*
+lib/
+node_modules/
+*.egg-info/
+.ipynb_checkpoints
+*.tsbuildinfo

@@ -1,0 +1,38 @@
+ID = "421c5580e90c6935405e53856cabff4a5c10ad61c25f8054f3905daf1655e74f"
+ID_human = "magazine-vegan-pennsylvania"
+toml_fname = "flat_1km_lebreton.toml"
+
+[coastline]
+coast_file = "templating/coastlines/base_1km.png"
+start_xy = [ 0, 0,]
+dx = 1000
+dy = 1000
+ID = "857c025a367b0c646bfc25671d98d48f3f2357711dfe67bc1415ade38e5aefec"
+ID_human = "early-hydrogen-fifteen"
+
+[hydro_model]
+duration_days = 4
+ID = "8d528b62b054e7b33f971138836a7459b69ba7b35f1a21a561562dc8c4f35cc0"
+ID_human = "enemy-magnesium-yellow"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "421c5580e90c6935405e53856cabff4a5c10ad61c25f8054f3905daf1655e74f"
+ID_human = "magazine-vegan-pennsylvania"
+
+[codes]
+coast_code = "X"
+resolution_code = "1"
+beach_code = "B"
+total = "X1B"
+
+[particle_model.beaching]
+beaching_key = "Lebreton2018"
+
+[particle_model.beaching.fieldset_options]
+beaching_time_cutoff_days = 2

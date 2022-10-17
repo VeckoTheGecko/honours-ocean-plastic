@@ -1,0 +1,38 @@
+ID = "3c2ab5470585512bc543051ba3f8d786c9f0824dd5f572149e2130c538cd6c99"
+ID_human = "nitrogen-sink-connecticut"
+toml_fname = "concave_1km_oninkb.toml"
+
+[coastline]
+coast_file = "templating/coastlines/concave_1km.png"
+start_xy = [ 0, 0,]
+dx = 1000
+dy = 1000
+ID = "5bcd8c8119df7d6724b749453db49bb1154d7ef3c1d49cfe528f7d14f080dc98"
+ID_human = "nitrogen-chicken-twelve"
+
+[hydro_model]
+duration_days = 4
+ID = "afe7f70143d524fa5e6c630ef27afb383277a511df8edd9f0c560885dd4c7860"
+ID_human = "oregon-uncle-burger"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "3c2ab5470585512bc543051ba3f8d786c9f0824dd5f572149e2130c538cd6c99"
+ID_human = "nitrogen-sink-connecticut"
+
+[codes]
+coast_code = "Y"
+resolution_code = "1"
+beach_code = "C"
+total = "Y1C"
+
+[particle_model.beaching]
+beaching_key = "Onink2021-beach"
+
+[particle_model.beaching.fieldset_options]
+beaching_timescale_days = 5

@@ -1,0 +1,39 @@
+table-name           'Boundary Section : 1'
+contents             'Logarithmic         '
+location             'N                   '
+time-function        'non-equidistant'
+reference-time       20220101
+time-unit            'minutes'
+interpolation        'linear'
+parameter            'time                '                     unit '[min]'
+parameter            'riemann         (r)  end A'               unit '[m/s]'
+parameter            'riemann         (r)  end B'               unit '[m/s]'
+records-in-table     2
+ 0.0000000e+000  0.0000000e+000  0.0000000e+000
+ 5.7600000e+003  0.0000000e+000  0.0000000e+000
+table-name           'Boundary Section : 2'
+contents             'Logarithmic         '
+location             'W                   '
+time-function        'non-equidistant'
+reference-time       20220101
+time-unit            'minutes'
+interpolation        'linear'
+parameter            'time                '                     unit '[min]'
+parameter            'riemann         (r)  end A'               unit '[m/s]'
+parameter            'riemann         (r)  end B'               unit '[m/s]'
+records-in-table     2
+ 0.0000000e+000  0.0000000e+000  0.0000000e+000
+ 5.7600000e+003  0.0000000e+000  0.0000000e+000
+table-name           'Boundary Section : 3'
+contents             'Logarithmic         '
+location             'E                   '
+time-function        'non-equidistant'
+reference-time       20220101
+time-unit            'minutes'
+interpolation        'linear'
+parameter            'time                '                     unit '[min]'
+parameter            'riemann         (r)  end A'               unit '[m/s]'
+parameter            'riemann         (r)  end B'               unit '[m/s]'
+records-in-table     2
+ 0.0000000e+000  0.0000000e+000  0.0000000e+000
+ 5.7600000e+003  0.0000000e+000  0.0000000e+000

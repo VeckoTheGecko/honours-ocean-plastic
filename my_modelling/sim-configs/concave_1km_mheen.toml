@@ -1,0 +1,38 @@
+ID = "2d5ff3d90cc3646ec4195dc4bd3b57609a3757ae69c98a6621323ea039bbe177"
+ID_human = "butter-maine-lake"
+toml_fname = "concave_1km_mheen.toml"
+
+[coastline]
+coast_file = "templating/coastlines/concave_1km.png"
+start_xy = [ 0, 0,]
+dx = 1000
+dy = 1000
+ID = "5bcd8c8119df7d6724b749453db49bb1154d7ef3c1d49cfe528f7d14f080dc98"
+ID_human = "nitrogen-chicken-twelve"
+
+[hydro_model]
+duration_days = 4
+ID = "afe7f70143d524fa5e6c630ef27afb383277a511df8edd9f0c560885dd4c7860"
+ID_human = "oregon-uncle-burger"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "2d5ff3d90cc3646ec4195dc4bd3b57609a3757ae69c98a6621323ea039bbe177"
+ID_human = "butter-maine-lake"
+
+[codes]
+coast_code = "Y"
+resolution_code = "1"
+beach_code = "D"
+total = "Y1D"
+
+[particle_model.beaching]
+beaching_key = "Mheen2020"
+
+[particle_model.beaching.fieldset_options]
+beaching_timescale_days = 5

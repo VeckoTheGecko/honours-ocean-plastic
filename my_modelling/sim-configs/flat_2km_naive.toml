@@ -1,0 +1,37 @@
+ID = "422e1f8143a4413faf65d0a4413f7c2c1d36959c340f102692e04fa8deed0620"
+ID_human = "kilo-moon-queen"
+toml_fname = "flat_2km_naive.toml"
+
+[coastline]
+coast_file = "templating/coastlines/base_2km.png"
+start_xy = [ 0, 0,]
+dx = 2000
+dy = 2000
+ID = "c12ca828e8e0c977851b6f30ed14b1e676a29e48a609e180abb6dc6667c4fa12"
+ID_human = "colorado-diet-mississippi"
+
+[hydro_model]
+duration_days = 4
+ID = "1e70bb8eabd24e61fac1d67655d916a3a4039726c7554758fb4837f426e93172"
+ID_human = "timing-snake-twenty"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "422e1f8143a4413faf65d0a4413f7c2c1d36959c340f102692e04fa8deed0620"
+ID_human = "kilo-moon-queen"
+
+[codes]
+coast_code = "X"
+resolution_code = "2"
+beach_code = "A"
+total = "X2A"
+
+[particle_model.beaching]
+beaching_key = "naive"
+
+[particle_model.beaching.fieldset_options]

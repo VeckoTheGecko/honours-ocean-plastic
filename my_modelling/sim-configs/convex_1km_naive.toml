@@ -1,0 +1,37 @@
+ID = "86563cfc2851d53d5e751837a4ed3f6c713689285f8dde975eaa664132e289de"
+ID_human = "potato-bluebird-butter"
+toml_fname = "convex_1km_naive.toml"
+
+[coastline]
+coast_file = "templating/coastlines/convex_1km.png"
+start_xy = [ 0, 0,]
+dx = 1000
+dy = 1000
+ID = "a3b237a664c7a9000342db19fb6442c20f7852ee6a63d9628aef5469146e267e"
+ID_human = "bacon-shade-september"
+
+[hydro_model]
+duration_days = 4
+ID = "628d5ec6f8d194208185e9bb4972c8b75f152c34ab903f1fd40b540359831603"
+ID_human = "april-music-island"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "86563cfc2851d53d5e751837a4ed3f6c713689285f8dde975eaa664132e289de"
+ID_human = "potato-bluebird-butter"
+
+[codes]
+coast_code = "Z"
+resolution_code = "1"
+beach_code = "A"
+total = "Z1A"
+
+[particle_model.beaching]
+beaching_key = "naive"
+
+[particle_model.beaching.fieldset_options]

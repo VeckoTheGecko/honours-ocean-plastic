@@ -1,0 +1,37 @@
+ID = "e248fdbc91997aa2a2b10da7be12971968f9db9a5b3643a9f07f4cabdfddf606"
+ID_human = "charlie-east-kentucky"
+toml_fname = "flat_1km_naive.toml"
+
+[coastline]
+coast_file = "templating/coastlines/base_1km.png"
+start_xy = [ 0, 0,]
+dx = 1000
+dy = 1000
+ID = "857c025a367b0c646bfc25671d98d48f3f2357711dfe67bc1415ade38e5aefec"
+ID_human = "early-hydrogen-fifteen"
+
+[hydro_model]
+duration_days = 4
+ID = "8d528b62b054e7b33f971138836a7459b69ba7b35f1a21a561562dc8c4f35cc0"
+ID_human = "enemy-magnesium-yellow"
+
+[particle_model]
+duration_days = 30
+n_particles = 5000
+dt_mins = 5
+K_h = 1
+particle_seed = 16
+spawning_band = 60000
+ID = "e248fdbc91997aa2a2b10da7be12971968f9db9a5b3643a9f07f4cabdfddf606"
+ID_human = "charlie-east-kentucky"
+
+[codes]
+coast_code = "X"
+resolution_code = "1"
+beach_code = "A"
+total = "X1A"
+
+[particle_model.beaching]
+beaching_key = "naive"
+
+[particle_model.beaching.fieldset_options]
